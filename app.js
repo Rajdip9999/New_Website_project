@@ -30,6 +30,7 @@ const dataBaseConnect = async()=>{
     }
 
     catch(err){
+
         console.log("DATABASE connect problem hochhe problem hochhe", err.message)        
     }
 
@@ -60,6 +61,10 @@ app.get('/contac',async (req,res)=>{
     catch(err){
         console.log(err.message)
     }
+})
+
+app.get('/name',(req,res)=>{
+    res.status(200).send('This is name')
 })
 app.post('/req', async (req,res)=>{
     const {name,num} = req.body
