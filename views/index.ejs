@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contac List</title>
+    <link rel="stylesheet" href="/fromstyle.css">
+</head>
+
+<body>
+    <section class="formsec">
+
+        <div class="formheader">
+            <h1>This is Fucking Form</h1>
+            <p>Please Enter your fucking Name and Number</p>
+        </div>
+        <ol type="1" class="ullist">
+            <% for(ele of name){%>
+                <li><%=ele.name%>  <%= ele.Number%></li>
+                <!-- <li><%=ele.Number%></li> -->
+            <%}%>
+        </ol>
+
+        <div class="formdiv">
+
+            <form action="/req" method="post">
+
+                <div class="formlist">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Please Enter your Name" required>
+
+                </div>
+
+                <div class="formlist">
+
+                    <label for="num">Number</label>
+                    <input type="number" id="num" name="num" placeholder="Please Enter your Number" required>
+                </div>
+                <div class="btndiv">
+                <input type="submit" value="Submit Now" class="btn">
+                <input type="reset" value="reset Now" class="btn">
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="/form.js"></script>
+
+</body>
+
+</html>

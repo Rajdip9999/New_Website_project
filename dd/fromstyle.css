@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.formheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, blue, green);
+    color: white;
+    font-style: italic;
+}
+
+.formheader p {
+    font-size: 2rem;
+}
+
+.ullist {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: blue;
+    color: white;
+    padding-left: 62px;
+
+
+}
+
+.ullist li {
+    padding: 5px;
+    border: 2px solid red;
+    margin: 2px 3px;
+    margin: 14px;
+}
+
+.formdiv {
+display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 429px;
+}
+
+.formlist {
+    margin: 19px 10px;
+}
+
+.formlist input {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.formlist label {
+    font-weight: bolder;
+}
+
+.btndiv {
+    margin: auto 111px;
+}
+
+.btn {
+    margin: 3px 5px;
+    padding: 4px 5px;
+    font-weight: bold;
+}
+
+.formdiv{
+    background-color: brown;
+}
